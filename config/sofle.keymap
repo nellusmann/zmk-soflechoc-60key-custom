@@ -75,11 +75,11 @@
             //               | GUI | ALT  | CTRL | LOWER|  ENTER |  | SPACE | RAISE| CTRL  | ALT   | GUI  |
 
             bindings = <
-&kp ESCAPE        &kp N1  &kp N2     &kp N3        &kp N4        &kp N5                              &kp N6      &kp N7         &kp N8        &kp N9    &kp N0           &kp BACKSPACE
-&kp TAB           &kp Q   &kp W      &kp E         &kp R         &kp T                               &kp Y       &kp U          &kp I         &kp O     &kp P            &kp DE_U_UMLAUT
-&kp LEFT_SHIFT    &kp A   &kp S      &kp D         &kp F         &kp G                               &kp H       &kp J          &kp K         &kp L     &kp DE_O_UMLAUT  &kp DE_A_UMLAUT
-&kp LEFT_CONTROL  &kp Z   &kp X      &kp C         &kp V         &kp B       &kp LBKT     &kp RBKT   &kp N       &kp M          &kp COMMA     &kp DOT   &kp FSLH         &kp RCTRL
-                          &kp ENTER  &kp LEFT_GUI  &kp LEFT_ALT  &tog LOWER  &kp SPACE    &kp ENTER  &tog RAISE  &kp RIGHT_ALT  &kp LEFT_GUI  &kp RGUI
+&kp ESCAPE        &kp N1  &kp N2     &kp N3        &kp N4        &kp N5                             &kp N6     &kp N7         &kp N8        &kp N9    &kp N0           &kp BACKSPACE
+&kp TAB           &kp Q   &kp W      &kp E         &kp R         &kp T                              &kp Y      &kp U          &kp I         &kp O     &kp P            &kp DE_U_UMLAUT
+&kp LEFT_SHIFT    &kp A   &kp S      &kp D         &kp F         &kp G                              &kp H      &kp J          &kp K         &kp L     &kp DE_O_UMLAUT  &kp DE_A_UMLAUT
+&kp LEFT_CONTROL  &kp Z   &kp X      &kp C         &kp V         &kp B      &kp LBKT     &kp RBKT   &kp N      &kp M          &kp COMMA     &kp DOT   &kp FSLH         &kp RCTRL
+                          &kp ENTER  &kp LEFT_GUI  &kp LEFT_ALT  &mo LOWER  &kp SPACE    &kp ENTER  &mo RAISE  &kp RIGHT_ALT  &kp LEFT_GUI  &kp RGUI
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
@@ -97,11 +97,11 @@
             //               |     |      |      |      |        |  |       |      |       |       |      |
 
             bindings = <
-&trans  &kp F1     &kp F2     &kp F3        &kp F4    &kp F5                       &kp F6          &kp F7         &kp F8          &kp F9                &kp F10                &kp F11
-&trans  &kp N1     &kp N2     &kp NUMBER_3  &kp N4    &kp N5                       &kp CARET       &kp AMPERSAND  &kp ASTRK       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp F12
-&trans  &kp EXCL   &kp AT     &kp HASH      &kp DLLR  &kp PRCNT                    &kp MINUS       &kp EQUAL      &kp ASTRK       &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PIPE
-&trans  &kp EQUAL  &kp MINUS  &kp PLUS      &kp LBRC  &kp RBRC   &trans    &trans  &kp UNDERSCORE  &kp PLUS       &kp LEFT_BRACE  &kp RIGHT_BRACE       &kp PIPE               &trans
-                   &trans     &trans        &trans    &tog 0     &trans    &trans  &tog 0          &trans         &trans          &trans
+&kp DE_DEGREE  &kp F1         &kp F2       &kp F3       &kp F4    &kp F5                       &kp F6          &kp F7     &kp F8         &kp F9            &kp F10     &kp DE_SHARP_S
+&trans         &kp DE_SQUARE  &kp DE_CUBE  &kp DE_EURO  &kp N4    &kp N5                       &kp INS         &kp MINUS  &kp PAGE_UP    &kp F11           &kp F12     &kp DE_ACUTE
+&trans         &kp EXCL       &kp AT       &kp HASH     &kp DLLR  &kp PRCNT                    &kp DEL         &kp END    &kp PAGE_DOWN  &kp LEFT_BRACKET  &kp SEMI    &kp DQT
+&trans         &kp EQUAL      &kp MINUS    &kp PLUS     &kp LBRC  &kp RBRC   &trans    &trans  &kp UNDERSCORE  &kp PLUS   &kp UNDER      &kp C_VOL_DN      &kp C_MUTE  &kp C_VOLUME_UP
+                              &trans       &trans       &trans    &tog 0     &trans    &trans  &tog 0          &trans     &trans         &trans
             >;
 
             sensor-bindings =
@@ -120,9 +120,9 @@
             //                |      |       |       |      |      |  |      |      |      |       |      |
 
             bindings = <
-&trans  &trans      &trans     &trans       &trans       &trans                      &trans     &trans    &trans    &trans     &trans   &trans
+&trans  &trans      &trans     &trans       &trans       &trans                      &trans     &trans    &trans    &trans     &trans   &kp DE_BACKSLASH
 &trans  &kp INS     &kp PSCRN  &kp K_CMENU  &trans       &trans                      &kp PG_UP  &trans    &kp UP    &trans     &kp N0   &trans
-&trans  &kp LALT    &kp LCTRL  &kp LSHFT    &trans       &kp CLCK                    &kp PG_DN  &kp LEFT  &kp DOWN  &kp RIGHT  &kp DEL  &kp BSPC
+&trans  &kp LALT    &kp LCTRL  &kp LSHFT    &trans       &kp CLCK                    &kp PG_DN  &kp LEFT  &kp DOWN  &kp RIGHT  &kp DEL  &kp KP_COMMA
 &trans  &kp K_UNDO  &kp K_CUT  &kp K_COPY   &kp K_PASTE  &trans    &trans    &trans  &trans     &trans    &trans    &trans     &trans   &trans
                     &trans     &trans       &trans       &tog 0    &trans    &trans  &tog 0     &trans    &trans    &trans
             >;
